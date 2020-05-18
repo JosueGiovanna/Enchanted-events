@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
+body{
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
+	color: #212529;
+}
+
+:root{
+	--amarillo: #ffbc00;
+	--azul:#6B80D9;
+	--blanco: #ffffff;
+	--borde:#000;
+	--morado:#8C68BB;
+	--naranja:#FFBC00;
+	--negro:#000000;
+	--grisclaro:rgba(150, 150, 150, 0.45);
+	--grisBackground:rgb(231, 231, 231);
+	--grisBorde: rgb(113, 113, 113);
+	--grisLetrasF:#707070;
+	--grisLetras: rgba(112, 112, 112, 0.61);
+}
+
+/*Esto separa las secciones solo se pone en una clase en el tag de "section"*/
+.section_separation{
+	padding: 8% 0;
+}
+
+.section_separation_row{
+	margin-top: 20px;
+}
+
+.description_names{
+	text-align: center;
+	background-color: #fff;
+	padding: 0;
+	padding-bottom: 60px;
+}
+
+.description_names2{
+	text-align: center;
+	background-color: #fff;
+	padding: 0;
+	padding-bottom: 30px;
+	border-left: 1px solid var(--grisBorde);
+	border-right: 1px solid var(--grisBorde);
+}
+
+.description_names h2,
+.description_names2 h2{
+	color: var(--morado);
+	margin-top: 15px;
+}
+
+.description_names h3,
+.description_names2  h3{
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--negro);
+	margin-top: 50px;
+}
+
+.description_names p,
+.description_names2 p{
+	font-size: 20px;
+}
+
+.separation_info h2{
+	font-size: 50px;
+	color: var(--morado);
+	text-align: center;
+}
+
+.separation_info h3{
+	font-size: 30px;
+	color: var(--grisLetras);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*boton morado*/
+.btn-morado{
+	background-color: var(--morado);
+	border-radius: 30px;/*hace las esquinas de los botones circulares*/
+	padding: 5px 20px!important;
+	color: #fff!important;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-left: 455px;
+	margin-top: 40px;
+}
+
+/*Hover en amarillo del boton morado*/
+.btn-morado:hover{
+	background-color: var(--amarillo);
+}
+
+.cards{
+	background-color: var(--blanco);
+	text-align: center;
+	padding: 40px;
+}
+
+.cards h2{
+	color: var(--negro);
+	text-transform: uppercase;
+	font-size: 23px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.cards li{
+	color: var(--grisLetras);
+	font-size: 15px;
+}
+
+.cards .btn-card{
+
+}
+
+.btn-card{
+	background-color: var(--morado);
+	color: var(--blanco);
+	border-radius: 30px;
+}
+
+/*animacion de boton*/
+.btn-card:hover{
+	transform: scale(0.9);
+	transition: all 0.3s ease-in-out;
+
+}
+
+/*Hover del boton de enmedio*/
+.cards .btn-card:hover{
+	border-radius: 30px;
+	transform: scale(1);
+	background: #fff;
+	border:1px solid var(--grisclaro);
+	color: var(--negro) !important;
+
+}
+
+/*Botones de los dos extremos*/
+.cards:not(:nth-child(2)) .btn-card{
+	background: #fff;
+	border:1px solid var(--grisclaro);
+	border-radius: 30px;
+	color: var(--grisLetras) !important;
+}
+
+.cards:not(:nth-child(2)) .btn-card:hover{
+	background: var(--morado);
+	color: #fff!important;
+}
+
+
+h4.price{
+	color: var(--morado);
+	font-size: 30px;
+	font-weight: 500;
+	margin-top: 30px;
+}
+
+.cards ul{
+	font-size: 18px;
+	font-weight: 400;
+	list-style: none; /*esto quita los puntitos de la listas*/
+	padding: 0;
+}
+
+.cards:nth-child(2){
+	z-index: 999;
+	border-top: 10px solid var(--rosado);
+}
+
+.cards:not(:nth-child(2)){
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sombra{
+	box-shadow: 2px 2px 40px 10px #eee;
+}
+
+.titulo_blanco{
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 40px;
+	color: var(--blanco);
+}
+
+.separation_img{
+	margin-top: 20px;
+}
+
+#hero{
+	background-image: url(../img/man_raising_hands.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 20% 0;
+}
+
+#hero h1{
+	font-size: 60px;
+	text-align: center;
+	color: var(--blanco);
+}
+
+
+#events{
+	background-color: var(--grisBackground);
+}
+
+#events h2{
+	color: var(--morado);
+	font-size: 45px;
+	font-size: 500;
+	margin-bottom: 40px;
+}
+
+#what_to_offer h2{
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: var(--morado);
+}
+
+#what_to_offer i{
+	font-size: 45px;
+	color: var(--morado);
+}
+
+#what_to_offer h3{
+	margin-top: 18px;
+	color: var(--negro);
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#what_to_offer i{
+	transition: all 0.3s ease;
+}
+
+/*Animacion de los iconos de font awesome*/
+#what_to_offer i:hover{
+	transform: translateY(-20px); /*Transalte y, x es para moverlos arriba y abajo se
+	pone negativo para que vaya hacia arriba*/
+	transition: all 0.3s ease;
+}
+
+#what_to_offer p{
+	color: var(--grisLetras);
+	font-size: 16px;
+}
+
+#meet_our_team{
+	background-color: var(--grisBackground);
+}
+
+#meet_our_team img{
+	transition: all 0.3s ease;
+}
+
+/*animacion de las imagenes de mee our team*/
+#meet_our_team img:hover{
+	transform: translateY(-20px); /*Transalte y, x es para moverlos arriba y abajo se
+	pone negativo para que vaya hacia arriba*/
+	transition: all 0.3s ease;
+}
+
+#planning_organizing h2{
+	font-size: 45px;
+	color: var(--morado);
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+#planning_organizing p{
+	font-size: 25px;
+	width: 100%;
+	margin: 0 auto 40px;
+}
+
+/*Imagen Background de la seccion de our events*/
+#our_event_packages{
+	background-image: url(../img/party_ballons.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 20% 0;
+}
+
+#clients h2{
+	font-size: 50px;
+	color: var(--morado);
+	margin-top: 40px;
+}
+
+#clients p{
+	font-size: 40px;
+	color: var(--grisLetras);
+	margin-top: 50px;
+}
+
+#celebrate{
+	background-color: #F6F6F6;
+}
+
+#celebrate h1{
+	color: var(--morado);
+	font-size: 50px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#celebrate .btn-morado{
+	padding: 8px 25px!important;
+}
+
+#host .description_names{
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 0;
+	padding-bottom: 60px;
+}
+
+#host h1{
+	color: var(--morado);
+	font-size: 50px;
+	margin-top: 20px;
+	text-align: center;
+	padding-bottom: 60px;
+}
+#host .description_names{
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#contact h2{
+	font-size: 50px;
+	color: var(--morado);
+	margin-top: 40px;
+}
+
+footer {
+	padding: 2% 0 ;
+	background-color: var(--azul);
+	color: #fff;
+}
+footer .top{
+	padding-bottom: 5%;
+}
+footer h2{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+footer a{
+	color: #fff;
+	
+}
+footer a:hover{
+	color: var(--amarillo);
+	
+}
+
+footer span{
+	font-size: 10px;
+
+}
+
+
+
+
