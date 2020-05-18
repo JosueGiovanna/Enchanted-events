@@ -371,7 +371,19 @@ footer span{
 	font-size: 10px;
 
 }
+.btn-send{
+	background-color: var(--morado);
+	border-radius: 30px;/*hace las esquinas de los botones circulares*/
+	padding: 5px 20px!important;
+	color: #fff!important;
+	text-transform: uppercase;
+	font-size: 15px;
+
+}
 
 
-
+/*Hover en amarillo del boton morado*/
+.btn-send:hover{
+	background-color: var(--amarillo);
+}
 
